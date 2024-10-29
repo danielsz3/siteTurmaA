@@ -46,9 +46,14 @@ export const Menu = () => {
                         ))
                     }
 
-
                 </LeftContainer>
+
                 <RightContainer>
+
+                    <NavbarLinkExtended href={'/carrinho'}>
+                        Car
+                    </NavbarLinkExtended>
+
 
                 </RightContainer>
             </NavbarInnerContainer>
