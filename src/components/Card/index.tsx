@@ -3,14 +3,14 @@
 import { Button, CardBody, TextButton, TextPromo, Title, TitlePreco, Image } from "./style"
 
 
-export const Card = () => {
+export const Card = (props: IProps) => {
     return (
-
         <CardBody>
-            <Image src={' '} alt="" />
-            <Title>PenDrive</Title>
-            <TitlePreco> 800,00 </TitlePreco>
-            <TextPromo>200,00</TextPromo>
+            <Image src='' alt={props.nome} />
+            <Title> {props.nome} </Title>
+            <TitlePreco> {props.valor}</TitlePreco>
+            <TextPromo> {props.promo}</TextPromo>
+
             <Button>
                 <TextButton> Detalhes</TextButton>
             </Button>
