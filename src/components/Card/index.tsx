@@ -1,20 +1,17 @@
-'use client'
+import Image from "next/image"
+import { Button, CardBody, TextButton, TextPromo, Title, TitlePreco } from "./style"
+import { IProduto } from "@/interfaces"
 
-import { Button, CardBody, TextButton, TextPromo, Title, TitlePreco, Image } from "./style"
-
-
-export const Card = (props: IProps) => {
+export const Card = (props: IProduto) => {
     return (
         <CardBody>
-            <Image src='' alt={props.nome} />
-            <Title> {props.nome} </Title>
-            <TitlePreco> {props.valor}</TitlePreco>
-            <TextPromo> {props.promo}</TextPromo>
-
+            <img src={'https://raw.githubusercontent.com/profchines/Imagens/refs/heads/main/Imagens/' + props.imagemg} alt={"Imagem de" + props.nome} />
+            <Title>{props.nome}</Title>
+            <TitlePreco>{props.valor}</TitlePreco>
+            <TextPromo>{props.promo}</TextPromo>
             <Button>
-                <TextButton> Detalhes</TextButton>
+                <TextButton>Detalhes</TextButton>
             </Button>
         </CardBody>
-
     )
 }

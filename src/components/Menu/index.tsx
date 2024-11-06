@@ -39,7 +39,7 @@ export const Menu = () => {
                         categorias.map((categoria) => (
                             <NavbarLinkExtended
                                 key={categoria.id}
-                                href={'/categoria/' + categoria.id}
+                                href={'/categorias/' + categoria.id}
                             >
                                 {categoria.nome}
                             </NavbarLinkExtended>
